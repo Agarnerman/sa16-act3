@@ -22,5 +22,9 @@ from pages import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
+    path('about/', views.about),
+    path('contact/', views.contact),
+    path('work/', views.work),
+
     path("", RedirectView.as_view(url="home/", permanent=True)),
 ]
